@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-0: rgb(107, 99, 255);
+  --color-1: rgb(93, 0, 255);
+  --color-2: rgb(246, 246, 246);
+  --color-3: rgb(194, 194, 194);
+
+  --background-color: rgb(13, 16, 25);
+}
+
+.form-main {
+  min-height: 100vh;
+  padding: 0 1rem 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient(
+    -45deg,
+    rgba(93, 0, 255, 0.514),
+    var(--background-color)
+  );
+
+  input {
+    background-color: var(--color-2);
+    width: 260px;
+    padding: 1rem 1.5rem;
+    color: var(--color-1);
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 0.9rem;
+    font-size: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:focus {
+      background-color: transparent;
+      color: var(--color-2);
+      outline: 2px solid var(--color-1);
+    }
+
+    &::placeholder {
+      color: var(--color-3);
+    }
+  }
+
+  .form_title {
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 2rem;
+    padding-top: 5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-2);
+  }
+
+  span {
+    color: var(--color-0);
+  }
+
+  button {
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.08rem;
+    background-color: var(--color-1);
+    color: var(--color-2);
+    border-radius: 0.9rem;
+    text-transform: uppercase;
+    border: none;
+    padding: 0.8rem;
+    margin-top: 0.7rem;
+    margin-bottom: 2rem;
+    transition: 0.4s;
+
+    &:hover {
+      background-color: var(--color-2);
+      color: #0f0f0f;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    gap: 20px;
+  }
+
+  .logout {
+    background-color: #ff1818;
+
+    padding: 0.9rem 1.5rem;
+  }
+
+  .online_btn {
+    padding: 0.9rem 1.5rem;
+  }
+
+  .title-home {
+    font-size: 18px;
+    color: rgb(91, 105, 255);
+
+    padding-bottom: 1rem;
+  }
+
+  h1 {
+    color: var(--color-2);
+    font-weight: 800;
+    line-height: 1.2;
+
+    padding-bottom: 1rem;
+  }
+
+  p {
+    font-size: 20px;
+    color: var(--color-3);
+
+    padding-bottom: 3rem;
+  }
+
+  .link {
+    color: var(--color-2);
+  }
+}
